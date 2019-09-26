@@ -6,6 +6,8 @@
 
 // CODE HERE
 
+let faveColors = ["Red", "White", "Black"];
+
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstname, superHeroName, homeTown, superPowers, superPowerXP, profileImage. 
 
@@ -23,6 +25,15 @@
 
 // CODE HERE
 
+let me = {
+    firstName: "Cam",
+    superHeroName: "Captain Thor",
+    homeTown: "Mckinney",
+    superPowers: ["Electrokinesis", "Martial Arts", "Teleportation"],
+    superPowerXP: math.floor(math.random() * 100) + 1,
+    profileImage: ''
+}
+
 //////////////////Step 3////////////////////
 // Create three variables to hold some data off your me object. The first variable should be 'regularName' that is the value of your firstName on the me object. The next variable is 'superName' which is the value of superHeroName on the me object. Last is 'homeTown' which will be the value of homeTown on the me object
 
@@ -34,6 +45,14 @@
 // Next, create a for loop to loop over the array. If any of the colors you chose is 'blue', change it's value to '#4D4DFF' which is just a more appealing color of blue. Outside of the for loop but still inside of setColor, invoke the function called background which will take in three arguments. These arguments should be each item of your array. This is a function we created for you to set the background colors.
 
 // CODE HERE
+
+function setColor(arr){
+    for (let i=0; i < faveColors.length; i++){
+        if (faveColors[i]){
+            return
+        }
+    }
+}
 
 //////////////////Step 5////////////////////
 //Create a function called 'setPowers' that takes in arr as a parameter. Loop over the arr param and run a function called createLi(), which will take each item of the array as an agument. The createLi function is a function we created to set the data on the screen. It outside the scope of this project
